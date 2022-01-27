@@ -2,7 +2,7 @@
 id: vNui4B6mu9fSjYI4Y5pBS
 title: Matchers
 desc: ''
-updated: 1643270133537
+updated: 1643270433714
 created: 1643268996710
 ---
 
@@ -16,7 +16,7 @@ There are two sides to a matcher:
 
 There are many kinds of matchers, because there are many kinds of objects and operations.
 
-1. Equality
+1. Equivalence
 ```ruby
 # Note: there's no == 🙃
 expect(actual).to eq(expected) # .eq
@@ -51,6 +51,12 @@ expect(actual).to be_between(min, max).exclusive
 
 # neighbourhood delta
 expect(actual).to be_within(delta).of(expected)
+```
+
+3. String ops
+```ruby
+expect(actual).to start_with(expected)
+expect(actual).to end_with(expected)
 
 # regex match
 expect(actual).to match(/regexp/)
@@ -61,7 +67,9 @@ expect(actual).to be_nil
 
 expect
 ```
-5. Objects
+5. Collection membership
 ```ruby
+expect(actual).to include(expected)
 
+expect(actual_array).to match_array(expected_array)
 ```
