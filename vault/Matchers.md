@@ -2,7 +2,7 @@
 id: vNui4B6mu9fSjYI4Y5pBS
 title: Matchers
 desc: ''
-updated: 1643270433714
+updated: 1643270601404
 created: 1643268996710
 ---
 
@@ -72,4 +72,14 @@ expect
 expect(actual).to include(expected)
 
 expect(actual_array).to match_array(expected_array)
+```
+6. Classes/types
+```ruby
+expected(actual).to be_instance_of(expected)
+
+expected(actual).to be_kind_of(expected)
+# Is-a relation
+
+expected(actual).to respond_to(expected)
+# Basically is_method. coz Ruby methods 'respond'.
 ```
