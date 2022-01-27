@@ -1,4 +1,15 @@
 {
     "dendron.rootDir": ".",
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*dendron*": true,
+        "**/*.yml": true,
+        "vault/root.md": true
+    }
 }
