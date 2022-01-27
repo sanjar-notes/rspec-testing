@@ -2,7 +2,7 @@
 id: vNui4B6mu9fSjYI4Y5pBS
 title: Matchers
 desc: ''
-updated: 1643270601404
+updated: 1643272226511
 created: 1643268996710
 ---
 
@@ -19,12 +19,10 @@ There are many kinds of matchers, because there are many kinds of objects and op
 1. Equivalence
 ```ruby
 # Note: there's no == 🙃
-expect(actual).to eq(expected) # .eq
+expect(actual).to eq(expected) # by value
 
-expect(actual).to equal(expected) #.equal
+expect(actual).to equal(expected) # by reference
 expect(actual).to be(expected) # same as above
-
-expect(actual).to
 ```
 2. Truthiness and bool values
 ```ruby
